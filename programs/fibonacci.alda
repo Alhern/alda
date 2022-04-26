@@ -1,0 +1,15 @@
+termes = 20;
+n1 = 0;
+n2 = 1;
+compte = 0; 
+
+FO fibonacci():
+	(ECRIS "SUITE DE FIBONACCI:" ;
+		TANTQUE (compte < termes) FAIS 
+			(ECRIS n1; 
+			tmp = n1 + n2; 
+			n1 = n2; 
+			n2 = tmp; 
+			INCR compte 1));
+
+fibonacci();

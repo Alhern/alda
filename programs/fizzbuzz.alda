@@ -1,0 +1,17 @@
+n = 20;
+compteur = 0;
+
+FO fizzbuzz(): (ECRIS "FIZZBUZZ JUSQU'A 20 :" ;
+			TANTQUE (compteur < n) FAIS 
+					(INCR compteur 1; 
+					SI (compteur % 3 == 0) ALORS 
+						(SI (compteur % 5 == 0) ALORS (ECRIS "fizzbuzz") SINON (ECRIS "fizz") )
+					SINON 
+						(SI (compteur % 5 == 0) ALORS (ECRIS "buzz") SINON (ECRIS compteur) ) 
+					) 
+		);
+
+fizzbuzz();
+
+
+
